@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Har",
+        "value": 100,
+		"rate": 100,
+		"year": 2017
+    },
+    {
+        "name": "Ram",
+        "value": 90,
+		"rate": 100,
+		"year": 2016
+    },
+    {
+        "name": "Gopal",
+        "value": 80,
+		"rate": 100,
+		"year": 2015
+    },
+    {
+        "name": "Gobind",
+        "value": 70,
+		"rate": 100,
+		"year": 2014
+    },
+    {
+        "name": "Prabhu",
+        "value": 75,
+		"rate": 100,
+		"year": 2013
+    },
+    {
+        "name": "Murari",
+        "value": 80,
+		"rate": 100,
+		"year": 2012
+    },
+    {
+        "name": "Narayan",
+        "value": 60,
+		"rate": 100,
+		"year": 2011
+    },
+    {
+        "name": "Allah",
+        "value": 50,
+		"rate": 100,
+		"year": 2010
+    },
+    {
+        "name": "Bhagwan",
+        "value": 30,
+		"rate": 100,
+		"year": 2009
+    }    
+    
+    
+]

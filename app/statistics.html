@@ -1,0 +1,309 @@
+<meta charset='utf-8'>
+<html>
+
+<head>
+  <style>
+
+  </style>
+  <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel='stylesheet' type="text/css" href='styles/statistics/statistics.css'>
+</head>
+
+<body>
+  <div class="container big">
+    <div class="tableBlock">
+      <form class="form-inline">
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEmail3" placeholder="playerName">
+          </div>
+        </div>
+        <div class="radio">
+          <div class="lifeTimeRadio">
+            <div class="form-check">
+              <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  lifeTime Statistcs
+                </label>
+            </div>
+          </div>
+          <div class="datewiseRadio">
+            <div class="form-check" >
+              <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    Date Statistcs
+              </label>
+            </div>
+          </div>
+          <div class="dateSearch">
+            <div class="dateForm">
+              <select type="text" id="monthBoxID" name="month">
+                  <option value="0">January</option>
+                  <option value="1">February</option>
+                  <option value="2">March</option>
+                  <option value="3">April</option>
+                  <option value="4">May</option>
+                  <option value="5">June</option>
+                  <option value="6">July</option>
+                  <option value="7">August</option>
+                  <option value="8">September</option>
+                  <option value="9">October</option>
+                  <option value="10">November</option>
+                  <option value="11">December</option>
+                  </select>
+            </div>
+            <div class="year">
+              <select type="text" id="yearBoxID" name="year">
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                </select>
+            </div>
+            <div class="search">
+              <button type="text" id="btn-statistics">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="player-stats">
+        <div class="Hands">
+          <div class="header">
+            <p>Hands Played</p>
+          </div>
+          <div class="data">
+            <p>78 Hands</p>
+          </div>
+        </div>
+        <div class="Hands">
+          <div class="header">
+            <p>Best Hand</p>
+          </div>
+          <div class="data">
+            <p>Four Of a Kind</p>
+          </div>
+        </div>
+        <div class="Hands">
+          <div class="header">
+            <p>Biggest Pot</p>
+          </div>
+          <div class="data">
+            <p>28.75$</p>
+          </div>
+        </div>
+        <div class="donut">
+          <div class="header">
+            <p>Hands Played</p>
+          </div>
+          <div id="doNut1" width="300" height="250"></div>
+        </div>
+        <div class="donut">
+          <div class="header">
+            <p>Time of Act(sec)</p>
+          </div>
+          <div id="doNut2" width="300" height="250"></div>
+
+        </div>
+        <div class="donut">
+          <div class="header">
+            <p>ActionStates</p>
+          </div>
+          <div id="doNut3" width="300" height="250"></div>
+          <script src="scripts/statistics/script.js"></script>
+        </div>
+        <div class="table">
+          <table class="table table-hover table1">
+            <thead>
+            <tr>
+              <th>UserId</th>
+              <th>VPIP</th>
+              <th>P.F.R </th>
+              <th>Raises% </th>
+              <th>Call% </th>
+              <th>Bet% </th>
+              <th>Fold% </th>
+              <th>RoundCount </th>
+              <th>CheckRaiseCount </th>
+              <th>ColdCallCount </th>
+              <th>Bet3% </th>
+              <th>Bet4% </th>
+              <th>Showdown</th>
+              <th>Steal</th>
+              <th>FoldedSteal </th>
+              <th>HandCount
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">ppoker219</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th scope="row">ppoker446</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+            <tr>
+              <th scope="row">ppoker548</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th scope="row">ppoker225</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            </tbody>
+          </table>
+          <table class="table table-hover table2">
+            <thead>
+            <tr>
+              <th>UserId</th>
+              <th>VPIP</th>
+              <th>P.F.R </th>
+              <th>Raises% </th>
+              <th>Call% </th>
+              <th>Bet% </th>
+              <th>Fold% </th>
+              <th>RoundCount </th>
+              <th>CheckRaiseCount </th>
+              <th>ColdCallCount </th>
+              <th>Bet3% </th>
+              <th>Bet4% </th>
+              <th>Showdown</th>
+              <th>Steal</th>
+              <th>FoldedSteal </th>
+              <th>HandCount
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row">ppoker219</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th scope="row">ppoker446</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>4</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>4</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+<script type="text/javascript">
+$(".dateSearch").hide();
+   $("#gridRadios2").click(function(){
+
+     $(".dateSearch").show("open");
+  });
+  $("#btn").click(function(e){
+    e.preventDefault();
+    $(".table1").hide();
+     $(".table2").show();
+  });
+  $("#gridRadios1").click(function(){
+    $(".table1").show();
+     $(".table2").hide();
+     $(".dateSearch").hide();
+
+
+
+  });
+
+
+  </script>
+
+</html>

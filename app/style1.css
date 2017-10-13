@@ -1,0 +1,132 @@
+.mainContainer {
+    width: 100%;
+    display: block;
+}
+.head {
+    width: 100%;
+    display: inline-block;
+    background: #eeeeee;
+	padding: 10px 15px;
+    /* height: 20px; */
+}
+.head .row {
+	margin-bottom: 0;
+}
+.headtop {
+    width: 80%;
+    margin: 80px auto;
+}
+.dateSearch {
+    display: inline-block;
+    padding-right: 10px;
+	padding: 8px 0;
+    /* margin-right: 18px; */
+}
+.dateForm {
+    margin-right: 15px;
+    display: inline-block;
+}
+.year {
+    display: inline-block;
+    margin-right: 15px;
+}
+.search {
+    display: inline-block;
+}
+select#yearBoxID {
+    width: 100px;
+}
+.year label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-right: 10px;
+}
+select#monthBoxID {
+    width: 150px;
+}
+.month label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-right: 10px;
+}
+.Hands {
+    display: inline-block;
+    width:100%;
+    border: 1px solid #24bba2;
+    /* float: left; */
+    background: white;
+    /* height: 50%; */
+   
+    /* color: black; */
+}
+.hands .data p {
+    margin: 0 auto;
+    /* padding: 25px; */
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    color: #24bba2;
+    font-size: 28px;
+}
+.hands .data {
+    min-height: 112px;
+}
+.boxs {
+	padding-top: 20px;
+}
+.header {
+    height: 30px;
+    /* top: 0; */
+    background: #259490;
+    border-radius: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+.donut .graph {
+	padding-top: 28px;
+	transform: translateX(41%);
+}
+.donut .graph.graph1 {
+	transform: translateX(29%);
+}
+.donut {
+    width: 43%;
+    border: 1px solid #24bba2;
+    display: inline-block;
+    margin: 18px;
+    background: white;
+	min-height: 226px;
+    
+    }
+    .donut:hover{
+        width: 43%;
+        border: 1px solid #24bba2;
+        display: inline-block;        
+        background: white;
+        box-shadow: 0px 0px 3px 1px #24bba2;
+     }   
+     p {
+        margin: 0 auto;
+        color: white;
+        padding-top: 5px;
+    }
+    .table {
+        margin: 0 auto;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        overflow: scroll;
+      }
+      .table td,
+      .table th {
+        color: #7c769a;
+        text-align: center;
+      }
+      tbody {
+        border-radius: 4px;
+      }
+      .table thead th {
+        color: #aba7be;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif
+      }
+      

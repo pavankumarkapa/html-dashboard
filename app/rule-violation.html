@@ -1,0 +1,738 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	 crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/css/bootstrap-slider.css">
+	<!-- <link rel="stylesheet" href="styles/main.css"> -->
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.9.0/bootstrap-slider.min.js"></script>
+
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<link rel="stylesheet" href="asscociation.css">
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="rules-violation.css">
+	<!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
+	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+</head>
+
+<body>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script>
+		  window.d3_3 = d3;
+		  d3 = null;
+		</script>
+			<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script>
+		  console.log(d3.version);
+		  console.log(d3_3.version);
+		</script>
+	<nav class="navbar navbar-light navbar-toggleable-xl bg-faded fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">					
+					eprotector
+				</a>
+			<div class="navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="player-statistics.html">Player Statistics</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="mainContainer">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="top">
+						<div class="search">
+							<label>search</label>
+							<input type="text" name="search" placeholder="">
+						</div>
+					</div>
+
+					<div class="middle">
+						<div class="filter">
+							Filters
+							<i class="fa fa-filter" aria-hidden="true"></i>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									show high to low
+								</label>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" disabled>
+									Option two is disabled
+								</label>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="">
+									show high to low
+								</label>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" disabled>
+									Option two is disabled
+								</label>
+						</div>
+						<!-- <div class="well">
+							<label>Filter option</label>
+							<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"
+							/>
+						</div>
+						<div class="well">
+							<label>Filter option</label>
+							<input id="ex2" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"
+							/>
+						</div> -->
+					</div>
+					<div class="bottom">
+						<ul>
+							<li>
+								<a class="player" href="#">pp_Mr.G-Power<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+
+							</li>
+
+							<li>
+								<a href="#">pp_bardus76<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_Alex.44<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_LP2222<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_bifbenga<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_shikleev<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_qayxswedc1<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_drohiem<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_aniPP<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_ScreammyVvv<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_loloki991<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_babDus<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_phenomenon_07<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_timek28<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_atorblednam<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_lencz<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+							<li>
+								<a href="#">pp_bambam1025<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="rightTop">
+						<div class="PlayerName">
+							<p>Player Name :<span> pp_poker540 <br>pp_poker540@gmail.com</span></p>
+							<!-- <p class="email"></p> -->
+						</div>
+						<div class="moneyConversition">
+							<p>AccountCreation Date : <br><span>20/08/2014</span></p>
+						</div>
+						<div class="accountCreation">
+							<p>RMC Date : <br><span>20/08/2014</span></p>
+						</div>
+						<div class="brand">
+							<p>Poker </p>
+						</div>
+					</div>
+					<div class="innerNavBar">
+						<nav class="nav nav-tabs" id="myTab" role="tablist">
+							<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+							 aria-expanded="true">Failure</a>
+							<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile">Sucess</a>
+							<a class="nav-item nav-link" id="nav-actedon-tab" data-toggle="tab" href="#nav-actedon" role="tab" aria-controls="nav-actedon">ActedOn</a>
+							<a class="nav-item nav-link" id="nav-aboard-tab" data-toggle="tab" href="#nav-abaord" role="tab" aria-controls="nav-aboard">Aboard</a>
+					</div>
+					</nav>
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="rulesTable">
+										<table>
+											<tr>
+												<th>RuleId</th>
+												<!-- <th>PlayerName</th> -->
+												<th>RulesVoilated</th>
+												<th>Time</th>
+												<th>check/uncheck</th>
+
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<!-- <td>pp_poker540</td> -->
+												<td>Rule10</td>
+												<td>22/08/2009</td>
+												<td> <input id="checkbox1" type="checkbox">
+													<label for="checkbox1">
+												</tr>
+												<tr class="spacing"></tr>
+												<tr>
+														<td>8452971065</td>
+														<!-- <td>pp_poker540</td> -->
+														<td>Rule10</td>
+														<td>22/08/2009</td>
+														<td> <input id="checkbox1" type="checkbox">
+															<label for="checkbox1">
+													</tr>
+													<tr class="spacing"></tr>
+													<tr>
+															<td>8452971065</td>
+															<!-- <td>pp_poker540</td> -->
+															<td>Rule10</td>
+															<td>22/08/2009</td>
+															<td> <input id="checkbox1" type="checkbox">
+																<label for="checkbox1">
+														</tr>
+														<tr class="spacing"></tr>
+														<tr>
+													<td>8452971065</td>
+													<!-- <td>pp_poker540</td> -->
+													<td>Rule10</td>
+													<td>22/08/2009</td>
+													<td> <input id="checkbox1" type="checkbox">
+														<label for="checkbox1">
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="actionState">
+											<div class="bottomContent">
+													<label>Player Account Withdrawl : </label>
+													<label class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input">
+															<span class="custom-control-indicator"></span>
+															<span class="custom-control-description">Block</span>
+														  </label>
+													<label class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input">
+																<span class="custom-control-indicator"></span>
+																<span class="custom-control-description">UnBlock</span>
+															  </label>
+													<label class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input">
+																	<span class="custom-control-indicator"></span>
+																	<span class="custom-control-description">Aboard</span>
+																  </label>
+
+
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlInput1">Agent Name : </label>
+										<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Agent Name">
+									</div>
+									<div class="comment">
+										<label>Add Comment : </label>
+										<textarea placeholder="enter your comment here"></textarea>
+									</div>
+									<div class="button">
+										<button type="button" class="btn btn-secondary btn-sm">Save</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="rulesTable">
+										<table>
+											<tr>
+												<th>RuleId</th>
+												<!-- <th>PlayerName</th> -->
+												<!-- <th>RulesVoilated</th> -->
+												<th>Time</th>
+												<!-- <th>check/uncheck</th> -->
+
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<!-- <td>pp_poker540</td>
+												<td>Rule10</td> -->
+												<td>22/08/2009</td>
+												<!-- <td> <input id="checkbox1" type="checkbox">
+													<label for="checkbox1"> -->
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<!-- <td>pp_poker540</td>
+													<td>Rule10</td> -->
+												<td>22/08/2009</td>
+												<!-- <td> <input id="checkbox1" type="checkbox">
+														<label for="checkbox1"> -->
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<!-- <td>pp_poker540</td>
+														<td>Rule10</td> -->
+												<td>22/08/2009</td>
+												<!-- <td> <input id="checkbox1" type="checkbox">
+															<label for="checkbox1"> -->
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<!-- <td>pp_poker540</td>
+												<td>Rule10</td> -->
+												<td>22/08/2009</td>
+												<!-- <td> <input id="checkbox1" type="checkbox">
+													<label for="checkbox1"> -->
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-md-12">
+								<div class="actionState">
+										<div class="bottomContent">
+												<label>Player Account Withdrawl : </label>
+													<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															UN-BLOCK
+															<div class="dropdown-menu">
+																	<a class="dropdown-item" href="#">UN-BLOCK</a>
+																	<a class="dropdown-item" href="#">BLOCK</a>
+															</div>
+													</button>
+
+
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlInput1">Agent Name : </label>
+										<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Agent Name">
+									</div>
+									<div class="comment">
+										<label>Add Comment : </label>
+										<textarea placeholder="enter your comment here"></textarea>
+									</div>
+									<div class="button">
+										<button type="button" class="btn btn-secondary btn-sm">Save</button>
+									</div>
+								</div>
+							</div> -->
+						</div>
+						<div class="tab-pane fade" id="nav-actedon" role="tabpanel" aria-labelledby="nav-actedon-tab">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="actedOn">
+										<table>
+											<tr>
+												<th>RuleID</th>
+												<th>Time</th>
+												<th>AgentName</th>
+												<th>ActionTakenOn</th>
+												<th>Action</th>
+												<th>comment</th>
+
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<td>22/08/2009</td>
+												<td>Risk13</td>
+												<td>22/08/2009</td>
+												<td>Moved to above board</td>
+												<td>Verifed</td>
+
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<td>22/08/2009</td>
+												<td>Risk13</td>
+												<td>22/08/2009</td>
+												<td>Moved to above board</td>
+												<td>Verifed</td>
+
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<td>22/08/2009</td>
+												<td>Risk13</td>
+												<td>22/08/2009</td>
+												<td>Moved to above board</td>
+												<td>Verifed</td>
+
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<td>22/08/2009</td>
+												<td>Risk13</td>
+												<td>22/08/2009</td>
+												<td>Moved to above board</td>
+												<td>Verifed</td>
+
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="actionState">
+									<div class="bottomContent">
+										<label>Player Account Withdrawl : </label>
+										<button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															UN-BLOCK
+															<div class="dropdown-menu">
+																	<a class="dropdown-item" href="#">UN-BLOCK</a>
+																	<a class="dropdown-item" href="#">BLOCK</a>
+															</div>
+													</button>
+
+
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlInput1">Agent Name : </label>
+										<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Agent Name">
+									</div>
+									<div class="comment">
+										<label>Add Comment : </label>
+										<textarea placeholder="enter your comment here"></textarea>
+									</div>
+									<div class="button">
+										<button type="button" class="btn btn-secondary btn-sm">Save</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="nav-abaord" role="tabpanel" aria-labelledby="nav-abaord-tab">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="aboveBoard">
+										<table>
+											<tr>
+												<th>RuleID</th>
+												<th>Time</th>
+												<th>AgentName</th>
+												<th>ActionTaken</th>
+												<th>comment</th>
+
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<td>22/7/2014</td>
+												<td>Risk23</td>
+												<td>UnBlocked</td>
+												<td class="comment">verified
+													<span class="riskComment">As his Finicial Statistics are checked and verified the player is "UNBLOCKED"</span>
+												</td>
+												
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<td>22/7/2014</td>
+												<td>Risk23</td>
+												<td>UnBlocked</td>
+												<td class="comment">verified
+													<span class="riskComment">As his Finicial Statistics are checked and verified the player is "UNBLOCKED"</span>
+												</td>
+												
+
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<td>22/7/2014</td>
+												<td>Risk23</td>
+												<td>UnBlocked</td>
+												<td class="comment">verified
+													<span class="riskComment">As his Finicial Statistics are checked and verified the player is "UNBLOCKED"</span>
+												</td>
+												
+
+											</tr>
+											<tr class="spacing"></tr>
+											<tr>
+												<td>8452971065</td>
+												<td>22/7/2014</td>
+												<td>Risk23</td>
+												<td>UnBlocked</td>
+												<td class="comment">verified
+													<span class="riskComment">As his Finicial Statistics are checked and verified the player is "UNBLOCKED"</span>
+												</td>
+												
+
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="widgets">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="bottomRight">
+									<div class="header">
+										<span class="statistics"> Statistics</span>
+										<span class="date">Last 30 Days</span>
+									</div>
+									<div class="middleBottomRight">
+										<div class="handsPlayed">
+											<span>Hands played</span>
+										</div>
+										<div class="statisticGraph">
+											<div class="statistic-alert">
+												<svg id="doNut1" width="130" height="130"></svg>
+												<script src="script-as.js"></script>
+											</div>
+											<div class="count">
+												<span>20</span>
+												<div class="gameType">
+													<ul>
+														<li class="cashGame">
+															Cash Game
+														</li>
+														<li class="sit">
+															Sit & Go
+														</li>
+														<li class="tournament">
+															Tournament
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="middleBottomBottom">
+										<div class="bestHand">
+											<span>
+																		Best Hand
+																	</span>
+										</div>
+										<div class="cardsdisplay">
+											<div class="cards">
+											</div>
+											<div class="cards">
+											</div>
+											<div class="cards">
+											</div>
+											<div class="cards">
+											</div>
+											<div class="cards">
+											</div>
+										</div>
+										<div class="cardType">
+											<span>pair</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="bottomRightFinance">
+									<div class="financeheader">
+										<a href="player-statistics.html"> <span>FinancialInfo</span></a>
+									</div>
+									<div class="values">
+										<div class="loading spin-1" data-text='TotalcashOut $1503.50'>
+											<!-- <span class="checkout">TotalcashOut<br>$1503.50</span> -->
+											<div class="loading spin-2" data-text='TotalDepositAmt $1423.50'>
+												<!-- <span class="deposite">TotalDepositAmt<br>$1503.50</span> -->
+												<div class="loading spin-3" data-text='TotalRakeAmt $503.50'>
+													<!-- <span class="rake">TotalRakeAmt<br>$1503.50</span> -->
+													<div class="loading spin-4" data-text='TotalwinAmt $150.50'>
+														<!-- <span class="win">TotalwinAmt<br>$1503.50</span> -->
+														<div class="loading spin-5" data-text='TotalBetAmt $103.50'>
+															<div class="loading spin-6" data-text='AccountBal $153.50'>
+																<!-- <span class="total">account Bal<br>$1653.50</span> -->
+															</div>
+															<span class="Bet">TotalAccountBal<br>$153.50</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="personalInfo">
+									<div class="personalHeader">
+										<span>Personal Info</span>
+									</div>
+									<div class="channel">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="table">
+													<table class="FinanceInfo">
+														<tr>
+															<th>
+																IPInfo
+															</th>
+															<th>
+																Channel
+															</th>
+														</tr>
+														<tr>
+															<td>
+																10.153.251.43
+															</td>
+															<td>
+																VC
+															</td>
+															<tr class="spacing"></tr>
+														</tr>
+														<tr>
+															<td>
+																10.153.251.43
+															</td>
+															<td>
+																AR
+															</td>
+														</tr>
+														<tr class="spacing"></tr>
+														<tr>
+															<td>
+																10.153.251.43
+															</td>
+															<td>
+																Mac
+															</td>
+														</tr>
+														<tr class="spacing"></tr>
+														<tr>
+															<td>
+																10.153.251.43
+															</td>
+															<td>
+																VC
+															</td>
+														</tr>
+														<tr class="spacing"></tr>
+														<tr>
+															<td>
+																10.153.251.43
+															</td>
+															<td>
+																VC
+															</td>
+														</tr>
+
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+<!-- <script type="text/javascript">
+	$("#tree").hide();
+	$(".player").click(function () {
+		$("#tree").show();
+
+	});
+
+</script> -->
+
+<!-- <script type="text/javascript">
+	$('#ex1').slider({
+		formatter: function (value) {
+			return 'Current value: ' + value;
+		}
+	});
+	$('#ex2').slider({
+		formatter: function (value) {
+			return 'Current value: ' + value;
+		}
+	});
+
+</script> -->
+<script>
+	$(".actionState").hide();
+	$("#checkbox1").click(function () {
+		$(".actionState").show();
+	})
+	$('.loading').mouseenter(function (e) {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.Bet').text(e.target.dataset.text);
+        return false;
+    })
+
+    $('.loading').mouseleave(function (e) {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.Bet').text(e.target.dataset.text);
+        // $('.Bet').empty();
+        return false;
+    })
+
+</script>
+
+
+</html>

@@ -1,0 +1,129 @@
+{
+    "name": "pokerauto216",
+    "children": [
+     {
+      "name": "pokerauto333",
+      "children": [
+       {
+        "name": "pokerauto280"
+       },
+       {
+        "name": "pokerauto319"
+       },
+       {
+        "name": "pokerauto446"
+       }
+      ]
+     },
+     {
+      "name": "pokerauto448",
+      "children": [
+       {"name": "pokerauto212", "size": 17010},
+       {"name": "pokerauto119", "size": 5842},
+       {
+        "name": "pokerauto490"
+       },
+       {"name": "pokerauto503", "size": 1041}
+      ]
+     },
+     {
+      "name": "pokerauto294",
+      "children": [
+       {
+        "name": "pokerauto131"},
+       {"name": "pokerauto151", "size": 1759},
+       {"name": "pokerauto123", "size": 2165},
+       {"name": "pokerauto787", "size": 586},
+       {"name": "pokerauto768", "size": 3331},
+       {"name": "pokerauto453", "size": 772},
+       {"name": "pokerauto778", "size": 3322}
+      ]
+     },
+     {
+      "name": "pokerauto312",
+      "children": [
+       {"name": "pokerauto645", "size": 8833},
+       {"name": "pokerauto434", "size": 1732},
+       {"name": "pokerauto235", "size": 3623},
+       {"name": "pokerauto545", "size": 10066}
+      ]
+     },
+     {
+      "name": "pokerauto402",
+      "children": [
+       {"name": "pokerauto344", "size": 4116},
+       {"name": "pokerauto399", "size": 4116}
+      ]
+     },
+     {
+      "name": "pokerauto798",
+      "children": [
+       {"name": "partypoker342", "size": 1082},
+       {"name": "partypoker865", "size": 1336},
+       {"name": "partypoker324", "size": 319},
+       {"name": "partypoker234", "size": 10498},
+       {"name": "partypoker544", "size": 2822}
+      ]
+     },
+     {
+      "name": "pokerauto812",
+      "children": [
+       {"name": "partypoker324", "size": 1616},
+       {"name": "partypoker754", "size": 1027},
+       {"name": "partypoker856", "size": 3891},
+       {"name": "partypoker756", "size": 891},
+       {"name": "partypoker567", "size": 2893},
+       {"name": "partypoker4536", "size": 5103},
+       {"name": "partypoker753", "size": 1101}
+      ]
+     },
+     {
+      "name": "pokerauto612",
+      "children": [
+       {"name": "partypoker342", "size": 2105},
+       {"name": "partypoker967", "size": 1316},
+       {"name": "partypoker565", "size": 3151},
+       {"name": "partypoker345", "size": 3770},
+       {"name": "partypoker234", "size": 2435},
+       {"name": "partypoker235", "size": 4839},
+       {"name": "partypoker456", "size": 1756},
+       {"name": "partypoker232", "size": 4268}
+      ]
+     },
+     {
+      "name": "pokerauto216",
+      "children": [
+       {"name": "partypoker743", "size": 8258},
+       {"name": "partypoker873", "size": 10001},
+       {"name": "partypoker938", "size": 8217},
+       {"name": "partypoker345", "size": 12555},
+       {"name": "partypoker237", "size": 2324},
+       {"name": "partypoker908", "size": 10993}
+      ]
+     },
+     {
+      "name": "pokerauto518",
+      "children": [
+       {
+        "name": "partypoker324"
+       },
+       {
+        "name": "partypoker865"
+       },
+       {
+        "name": "partypoker673"
+       },
+       {
+        "name": "partypoker743"
+       },
+       {
+        "name": "partypoker435"
+       },
+       {
+        "name": "partypoker234"
+       },
+       {"name": "ppoker342", "size": 16540}
+      ]
+     }
+    ]
+   }

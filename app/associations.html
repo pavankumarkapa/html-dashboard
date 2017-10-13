@@ -1,0 +1,452 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
+    <!-- <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="asscociation.css">
+
+</head>
+
+<body>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script>
+          window.d3_3 = d3;
+          d3 = null;
+        </script>
+            debugger;
+            <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script>
+          console.log(d3.version);
+          console.log(d3_3.version);
+        </script>
+	<nav class="navbar navbar-light navbar-toggleable-xl bg-faded fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					eprotector
+				</a>
+				<div class="navbar-collapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="player-statistics.html">Player Statistics</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+    <div class="container-fluid">
+        <div class="mainContainer">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="top">
+                        <div class="search">
+                            <label>search</label>
+                            <input type="text" name="search" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="middle">
+                        <div class="filter">
+                            Filters
+                            <i class="fa fa-filter" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox" value="">
+                                                 FirstName
+                                                </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox" value="">
+                                                 LastName
+                                                </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox" value="" >
+                                                Email
+                                                </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                                      <input class="form-check-input" type="checkbox" value="">
+                                                    UCID
+                                                    </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                                      <input class="form-check-input" type="checkbox" value="">
+                                                   IP
+                                                    </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                                      <input class="form-check-input" type="checkbox" value="" >
+                                                     DOB
+                                                    </label>
+                        </div>
+                        <!-- <div class="slider">
+                                    <label>filter option</label>
+                                    <input id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"
+                                    />
+                                </div>
+                                <div class="slider">
+                                    <label>filter option</label>
+                                    <input id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"
+                                    />
+                                </div> -->
+                    </div>
+                    <div class="bottom">
+                        <ul>
+                            <li>
+                                <a class="player" href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="#">pp_poker540<span><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="rightTop">
+                        <div class="PlayerName">
+                            <p>Player Name :<span> pp_poker540 <br>pp_poker540@gmail.com</span></p>
+                            <!-- <p class="email"></p> -->
+                        </div>
+                        <div class="moneyConversition">
+                            <p>AccountCreation Date : <br><span>20/08/2014</span></p>
+                        </div>
+                        <div class="accountCreation">
+                            <p>RMC Date : <br><span>20/08/2014</span></p>
+                        </div>
+                        <div class="brand">
+                            <p>Poker </p>
+                        </div>
+                    </div>
+                    <div class="rightMiddle">
+                        <div class="Graph">
+                            <svg id="tree" width="960" height="800"></svg>
+                        </div>
+                        <script src="tree.js"></script>
+                        <!-- <div class="table">
+                                    <div class="individualPlayer">
+                                        <table>
+                                            <tr>
+                                                <th>S.NO</th>
+                                                <th>GameID</th>
+                                                <!-- <th>InvestigatedID</th>
+                                                        <th>AlertType</th>
+                                                        <th>Comment</th> -->
+                        <!-- </tr>
+                                            <tr> -->
+                        <!-- <td><a href="#">1</a></td>
+                                                <td><a href="#">4525698734</a></td> -->
+                        <!-- <td>13-OCT-09</td>
+                                                        <td>1</td>
+                                                        <td>Money Dumping / IAT Associated players playing together / pp_klepsyl transferred
+                                                            funds to pp_nollkronor, need to make the players Dont Allow (See Hand NO:8492291652),
+                                                            thing the MD is to reverse the extraw IAT recd, no need to reverse the MD, need
+                                                            to warn the players and need explanation and docs, Please note that pp_klepsyl
+                                                            already sent docs hence only expl on his account is enough... # To make the players
+                                                            Dont Allow... - Investigated on 13-OCT-09</td> -->
+                        <!-- </tr>
+
+                                            <tr>
+                                                <td><a href="#">2</a></td>
+                                                <td><a href="#">5425698734</a></td> -->
+                        <!-- <td>13-OCT-09</td>
+                                                        <td>1</td>
+                                                        <td>Money Dumping / IAT Associated players playing together / pp_klepsyl transferred
+                                                            funds to pp_nollkronor, need to make the players Dont Allow (See Hand NO:8492291652),
+                                                            thing the MD is to reverse the extraw IAT recd, no need to reverse the MD, need
+                                                            to warn the players and need explanation and docs, Please note that pp_klepsyl
+                                                            already sent docs hence only expl on his account is enough... # To make the players
+                                                            Dont Allow... - Investigated on 13-OCT-09</td> -->
+                        <!-- </tr>
+                                            <tr>
+                                                <td><a href="#">3</a></td>
+                                                <td><a href="#">4955698734</a></td> -->
+                        <!-- <td>13-OCT-09</td>
+                                                        <td>1</td>
+                                                        <td>Money Dumping / IAT Associated players playing together / pp_klepsyl transferred
+                                                            funds to pp_nollkronor, need to make the players Dont Allow (See Hand NO:8492291652),
+                                                            thing the MD is to reverse the extraw IAT recd, no need to reverse the MD, need
+                                                            to warn the players and need explanation and docs, Please note that pp_klepsyl
+                                                            already sent docs hence only expl on his account is enough... # To make the players
+                                                            Dont Allow... - Investigated on 13-OCT-09
+                                                        </td> -->
+                        <!-- </tr>
+                                        </table>
+                                    </div>
+                                </div> -->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="widgets">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="bottomRight">
+                                    <div class="header">
+                                        <span class="statistics"> Statistics</span>
+                                        <span class="date">Last 30 Days</span>
+                                    </div>
+                                    <div class="middleBottomRight">
+                                        <div class="handsPlayed">
+                                            <span>Hands played</span>
+                                        </div>
+                                        <div class="statisticGraph">
+                                            <div class="statistic-alert">
+                                                <svg id="doNut1" width="130" height="130"></svg>
+                                                <script src="script-as.js"></script>
+                                            </div>
+                                            <div class="count">
+                                                <span>20</span>
+                                                <div class="gameType">
+                                                    <ul>
+                                                        <li class="cashGame">
+                                                            Cash Game
+                                                        </li>
+                                                        <li class="sit">
+                                                            Sit & Go
+                                                        </li>
+                                                        <li class="tournament">
+                                                            Tournament
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="middleBottomBottom">
+                                        <div class="bestHand">
+                                            <span>
+                                                    Best Hand
+                                                </span>
+                                        </div>
+                                        <div class="cardsdisplay">
+                                            <div class="cards">
+                                            </div>
+                                            <div class="cards">
+                                            </div>
+                                            <div class="cards">
+                                            </div>
+                                            <div class="cards">
+                                            </div>
+                                            <div class="cards">
+                                            </div>
+                                        </div>
+                                        <div class="cardType">
+                                            <span>pair</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="bottomRightFinance">
+                                    <div class="financeheader">
+                                        <a href="player-statistics.html"> <span>FinancialInfo</span></a>
+                                    </div>
+                                    <div class="values">
+                                        <div class="loading spin-1" data-text='TotalcashOut $1503.50'>
+                                            <!-- <span class="checkout">TotalcashOut<br>$1503.50</span> -->
+                                            <div class="loading spin-2" data-text='TotalDepositAmt $1423.50'>
+                                                <!-- <span class="deposite">TotalDepositAmt<br>$1503.50</span> -->
+                                                <div class="loading spin-3" data-text='TotalRakeAmt $503.50'>
+                                                    <!-- <span class="rake">TotalRakeAmt<br>$1503.50</span> -->
+                                                    <div class="loading spin-4" data-text='TotalwinAmt $150.50'>
+                                                        <!-- <span class="win">TotalwinAmt<br>$1503.50</span> -->
+                                                        <div class="loading spin-5" data-text='TotalBetAmt $103.50'>
+                                                            <div class="loading spin-6" data-text='AccountBal $153.50'>
+                                                                <!-- <span class="total">account Bal<br>$1653.50</span> -->
+                                                            </div>
+                                                            <span class="Bet">TotalAccountBal<br>$153.50</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="personalInfo">
+                                    <div class="personalHeader">
+                                        <span>Personal Info</span>
+                                    </div>
+                                    <div class="channel">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="table">
+                                                    <table class="FinanceInfo">
+                                                        <tr>
+                                                            <th>
+                                                                IPInfo
+                                                            </th>
+                                                            <th>
+                                                                Channel
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                10.153.251.43
+                                                            </td>
+                                                            <td>
+                                                                VC
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                10.153.251.43
+                                                            </td>
+                                                            <td>
+                                                                AR
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                10.153.251.43
+                                                            </td>
+                                                            <td>
+                                                                Mac
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                10.153.251.43
+                                                            </td>
+                                                            <td>
+                                                                VC
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                10.153.251.43
+                                                            </td>
+                                                            <td>
+                                                                VC
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+<script type="text/javascript">
+    // $("#tree").hide();
+    // $(".widgets").hide();
+    // $(".player").click(function () {
+    //     $("#tree").show();
+    //     $(".widgets").show();
+
+    // });
+    
+
+    $('.loading').mouseenter(function (e) {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.Bet').text(e.target.dataset.text);
+        return false;
+    })
+
+    $('.loading').mouseleave(function (e) {
+        console.log(e);
+        e.preventDefault();
+        e.stopPropagation();
+        $('.Bet').text(e.target.dataset.text);
+        // $('.Bet').empty();
+        return false;
+    })
+
+</script>
+ 
+
+</html>

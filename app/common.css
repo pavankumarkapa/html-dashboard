@@ -1,0 +1,178 @@
+input[type=text] {
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    /* background-image: url('searchicon.png'); */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    /* padding: 12px 20px 12px 40px; */
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.mainContainer {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #dedede;
+    margin-top: 80px;
+}
+
+.container-fluid {
+    background: #f7f8f9;
+    HEIGHT: 100%;
+}
+
+.col-md-4 {
+    display: inline-block;
+}
+
+.top {
+    padding: 20px;
+    background: #efefef;
+}
+
+.middle {
+    padding: 20px;
+    background: #f6f6f6;
+    display: block;
+}
+
+.filter {
+    line-height: 1.5em;
+}
+
+i.fa.fa-filter {
+    float: right;
+    line-height: 1.5em;
+    padding-right: 10px;
+}
+
+.form-check {
+    margin-top: 10px;
+    display: inline-block;
+    padding-right: 10px;
+    /* float: left; */
+}
+/* .slider #ex8Slider .slider-selection {
+            background: #BABABA;
+        }
+
+        .slider {
+            padding: 15px;
+        }
+
+        .slider label {
+            font-weight: bold;
+        } */
+
+.bottom {
+    margin-top: 10px;
+    width: 100%;
+    background: #cbcbcb;
+    padding-top: 5px;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+ul {
+    /* text-align: center; */
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.bottom li a {
+    display: block;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 2px;
+    background: white
+    /* margin: 0 auto; */
+    /* background: white; */
+}
+
+.bottom a {
+    /* text-align: center; */
+    color: black;
+    /* background: white; */
+}
+
+.bottom a i.fa.fa-angle-right {
+    float: right;
+    line-height: 1.2em;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.rightTop {
+    background: #efefef;
+    padding: 15px;
+    margin-left: -10px;
+    display: inline-block;
+    width: 100%
+}
+
+.node {
+    cursor: pointer;
+}
+
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.node text {
+    font: 10px sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+
+.bottomRight {
+    width: 100%;
+    margin-bottom: 5px;
+    /* margin: 10px; */
+    display: block;
+    border: 1px solid black;
+    float: left;
+    background: white;
+}
+
+.individualPlayer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    background: white;
+}
+
+body {
+    background: #f7f8f9;
+}
+.brand {
+    float: left;
+    padding-left: 25px;
+}
+
+.accountCreation {
+    float: left;
+    padding-right: 20px;
+}
+
+.moneyConversition {
+    float: left;
+    padding-right: 20px;
+}
+
+.PlayerName {
+    float: left;
+    padding-right: 20px;
+}
+

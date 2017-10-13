@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Web Starter Kit</title>
+
+		<!-- Disable tap highlight on IE -->
+		<meta name="msapplication-tap-highlight" content="no">
+
+		<!-- Web Application Manifest -->
+		<link rel="manifest" href="manifest.json">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="Web Starter Kit">
+		<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+		<link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+		<meta name="msapplication-TileColor" content="#2F3BA2">
+
+		<!-- Color the status bar on mobile devices -->
+		<meta name="theme-color" content="#2F3BA2">
+
+		<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+		<!--
+<link rel="canonical" href="http://www.example.com/">
+-->
+
+		<!-- Bootstrap -->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+		<!-- Your styles -->
+		<link rel="stylesheet" href="styles/playerinfo/playerandgameinfo.css">
+	</head>
+	<body>
+		<div class="top-nav">
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Stats Home Page</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Player Based Search</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">BVerified</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Stakes</a>
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<div class="graph-block">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="sm-box">
+							<svg id="visualisation" width="480" height="300"></svg>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="sm-box">
+							<svg id="visualisation1" width="480" height="300"></svg>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="sm-box">
+							<svg id="bar1" width="480" height="300"></svg>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="sm-box">
+							<svg id="bar" width="480" height="270"></svg>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="player-general-info-block clearfix">
+					<h3>Player Status info</h3>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="sm-box">
+								<div class="col-md-8 left">
+									<h4>Total min</h4>
+									<h6>10k</h6>
+								</div>
+								<div class="col-md-4 right">
+									<i class="fa fa-usd" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="sm-box with-img">
+								<div class="col-md-8 left">
+									<h4>Total loss</h4>
+									<h6>90k</h6>
+								</div>
+								<div class="col-md-4 right">
+									<i class="fa fa-usd" aria-hidden="true"></i>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="sm-box">
+								<div class="col-md-8 left">
+									<h4>Total Rake</h4>
+									<h6>567</h6>
+								</div>
+								<div class="col-md-4 right">
+									<i class="fa fa-snowflake-o" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="sm-box">
+								<div class="col-md-8 left">
+									<h4>Bet Amount</h4>
+									<h6>567</h6>
+								</div>
+								<div class="col-md-4 right">
+									<i class="fa fa-btc" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="sm-box">
+								<div class="col-md-8 left">
+									<h4>Join Date </h4>
+									<h6>15/05/2012</h6>
+								</div>
+								<div class="col-md-4 right">
+									<i class="fa fa-calendar" aria-hidden="true"></i>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="sm-box">
+								<div class="col-md-8 left">
+									<h4>Expiry Date </h4>
+									<h6>15/06/2012</h6>
+								</div>
+								<div class="col-md-4 right">
+									<i class="fa fa-calendar" aria-hidden="true"></i>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+		</div>
+
+		<!-- build:js scripts/main.min.js -->
+		<script src="//d3js.org/d3.v4.min.js"></script>
+		<!--<script src="scripts/main.js"></script>-->
+		<!-- endbuild -->
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+									})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-XXXXX-X', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<!-- Built with love using Web Starter Kit -->
+
+
+
+		<script>
+			var data = [{
+				"sale": "202",
+				"year": "2000"
+			}, {
+				"sale": "215",
+				"year": "2001"
+			}, {
+				"sale": "179",
+				"year": "2002"
+			}, {
+				"sale": "199",
+				"year": "2003"
+			}, {
+				"sale": "134",
+				"year": "2003"
+			}, {
+				"sale": "176",
+				"year": "2006"
+			}];
+			var data2 = [{
+				"sale": "152",
+				"year": "2000"
+			}, {
+				"sale": "550",
+				"year": "2001"
+			}, {
+				"sale": "420",
+				"year": "2002"
+			}, {
+				"sale": "300",
+				"year": "2003"
+			}, {
+				"sale": "280",
+				"year": "2004"
+			}, {
+				"sale": "476",
+				"year": "2006"
+			}];
+			var data3 = [{
+				"sale": "100",
+				"year": "2000"
+			}, {
+				"sale": "250",
+				"year": "2001"
+			}, {
+				"sale": "320",
+				"year": "2002"
+			}, {
+				"sale": "500",
+				"year": "2003"
+			}, {
+				"sale": "180",
+				"year": "2004"
+			}, {
+				"sale": "350",
+				"year": "2006"
+			}];
+
+
+			var vis = d3.select("#visualisation"),
+				WIDTH = 480,
+				HEIGHT = 270,
+				MARGINS = {
+					top: 20,
+					right: 20,
+					bottom: 20,
+					left: 30
+				},
+
+				xScale = d3.scaleLinear()
+			.range([MARGINS.left, WIDTH - MARGINS.right])
+			.domain([2000, 2006]),
+
+				yScale = d3.scaleLinear()
+			.range([HEIGHT - MARGINS.top, MARGINS.bottom])
+			.domain([0, 600]),
+
+				xAxis = d3.axisBottom()
+			.scale(xScale)
+			.ticks(5);
+
+
+
+			vis.append("svg:g")
+				.attr("transform", "translate(0," + (HEIGHT - MARGINS.bottom) + ")")
+				.call(xAxis);
+
+
+			yAxis = d3.axisLeft()
+				.scale(yScale)
+				.ticks(3)
+
+			vis.append("svg:g")
+				.attr("transform", "translate(" + (MARGINS.left) + ",0)")
+				.call(yAxis);
+
+			var lineGen = d3.line()
+			.x(function (d) {
+				return xScale(d.year);
+			})
+			.y(function (d) {
+				return yScale(d.sale);
+			})
+			.curve(d3.curveBasis);
+			//.interpolate("basis");
+
+			vis.append('svg:path')
+				.attr('d', lineGen(data))
+				.attr('stroke', 'green')
+				.attr('stroke-width', 1)
+				.attr('fill', 'none');
+			vis.append('svg:path')
+				.attr('d', lineGen(data2))
+				.attr('stroke', 'blue')
+				.attr('stroke-width', 2)
+				.attr('fill', 'none');
+			vis.append('svg:path')
+				.attr('d', lineGen(data3))
+				.attr('stroke', 'red')
+				.attr('stroke-width', 2)
+				.attr('fill', 'none');
+
+
+
+
+		</script>
+		<script>
+
+			var vis = d3.select("#visualisation1"),
+				WIDTH = 480,
+				HEIGHT = 270,
+				MARGINS = {
+					top: 20,
+					right: 20,
+					bottom: 20,
+					left: 30
+				},
+
+				xScale = d3.scaleLinear()
+			.range([MARGINS.left, WIDTH - MARGINS.right])
+			.domain([2000, 2006]),
+
+				yScale = d3.scaleLinear()
+			.range([HEIGHT - MARGINS.top, MARGINS.bottom])
+			.domain([0, 600]),
+
+				xAxis = d3.axisBottom()
+			.ticks(5)
+			.scale(xScale);
+
+
+
+			vis.append("svg:g")
+				.attr("transform", "translate(0," + (HEIGHT - MARGINS.bottom) + ")")
+				.call(xAxis);
+
+
+			yAxis = d3.axisLeft()
+				.scale(yScale)
+				.ticks(3)
+
+			vis.append("svg:g")
+				.attr("transform", "translate(" + (MARGINS.left) + ",0)")
+				.call(yAxis);
+
+			var lineGen = d3.line()
+			.x(function (d) {
+				return xScale(d.year);
+			})
+			.y(function (d) {
+				return yScale(d.sale);
+			})
+			.curve(d3.curveBasis);
+
+			vis.append('svg:path')
+				.attr('d', lineGen(data))
+				.attr('stroke', 'green')
+				.attr('stroke-width', 1)
+				.attr('fill', 'none');
+
+		</script>
+
+
+
+		<script>
+			var margin = { top: 20, right: 20, bottom: 30, left: 40 },
+				width = 480 - margin.left - margin.right, //900
+				height = 270 - margin.top - margin.bottom; //450
+			var x0 = d3.scaleBand()
+			.rangeRound([0, width])
+			.padding(0.1);
+
+			var x1 = d3.scaleBand();
+
+			var y = d3.scaleLinear()
+			.range([height, 0]);
+
+			var colorRange = d3.scaleOrdinal(d3.schemeCategory20);
+			var color = d3.scaleOrdinal()
+			.range(colorRange.range());
+
+			var xAxis = d3.axisBottom()
+			.scale(x0)
+			.ticks(0)
+
+			var yAxis = d3.axisLeft()
+			.scale(y)
+			.tickFormat(d3.format(".2s"));
+
+			var divTooltip = d3.select("body").append("div").attr("class", "toolTip");
+
+			d3.json("geojson/playerinfo/pi.json", function (error, dataset) {
+				var svg = d3.select("#bar1")
+				.attr("width", width + margin.left + margin.right)
+				.attr("height", height + margin.top + margin.bottom)
+				.append("g")
+				.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+				dataset = [
+					{label:"john", "Not Satisfied":20, "Not Much Satisfied":10, },
+					{label:"mike", "Not Satisfied":15, "Not Much Satisfied":30,},
+					{label:"mark", "Not Satisfied":15, "Not Much Satisfied":30,},
+					{label:"joe", "Not Satisfied":15, "Not Much Satisfied":30, },
+					{label:"nancy", "Not Satisfied":20, "Not Much Satisfied":10, },
+					{label:"ra", "Not Satisfied":15, "Not Much Satisfied":30,},
+					{label:"crysta", "Not Satisfied":15, "Not Much Satisfied":30, },
+					{label:"naina", "Not Satisfied":15, "Not Much Satisfied":30}
+				];
+
+				var options = d3.keys(dataset[0]).filter(function(key) { return (key !== "label"); });
+
+				dataset.forEach(function(d) {
+					d.valores = options.map(function(name) { return {name: name, value: +d[name]}; });
+				});
+
+				x0.domain(dataset.map(function(d) { return d.label; }));
+				x1.domain(options).rangeRound([0, x0.bandwidth()]);
+				y.domain([0, d3.max(dataset, function(d) { return d3.max(d.valores, function(d) { return d.value; }); })]);
+
+				svg.append("g")
+					.attr("class", "x-axis")
+					.attr("transform", "translate(0," + height + ")")
+					.attr("value","")
+					.call(xAxis);
+
+				svg.append("g")
+					.attr("class", "y axis")
+					.call(yAxis)
+					.append("text")
+					.attr("transform", "rotate(-90)")
+					.attr("y", 6)
+					.attr("dy", ".71em")
+					.style("text-anchor", "end")
+
+				var bar = svg.selectAll(".bar")
+				.data(dataset)
+				.enter().append("g")
+				.attr("class", "rect")
+				.attr("transform", function(d) { return "translate(" + x0(d.label) + ",0)"; });
+
+				bar.selectAll("rect")
+					.data(function(d) { return d.valores; })
+					.enter().append("rect")
+					.attr("width", x1.bandwidth())
+					.attr("x", function(d) { return x1(d.name); })
+					.attr("y", function(d) { return y(d.value); })
+					.attr("value", function(d){return d.name;})
+					.attr("height", function(d) { return height - y(d.value); })
+					.style("fill", function(d) { return color(d.name); });
+			});
+
+		</script>
+		<script>
+
+			// set the dimensions and margins of the graph
+			var margin = { top: 20, right: 20, bottom: 30, left: 40 },
+				width = 480 - margin.left - margin.right, //900
+				height = 270 - margin.top - margin.bottom; //450
+
+			// set the ranges
+			var x = d3.scaleBand()
+			.range([0, width])
+			.paddingInner(0.1);
+			var y = d3.scaleLinear()
+			.range([height, 0]);
+
+			// append the svg object to the body of the page
+			// append a 'group' element to 'svg'
+			// moves the 'group' element to the top left margin
+			var svg = d3.select("#bar").append("svg")
+			.attr("width", 480) //960
+			.attr("height", 270) //500
+			.append("g")
+			.attr("transform",
+				  "translate(30 , 20)");
+
+			// get the data
+			d3.json("geojson/playerinfo/pi.json", function (error, data) {
+				if (error) throw error;
+
+				// format the data
+				data.forEach(function (d) {
+					d.age = +d.age;
+				});
+
+				// Scale the range of the data in the domains
+				x.domain(data.map(function (d) { return d.name; }));
+				y.domain([0, d3.max(data, function (d) { return d.age; })]);
+
+				// append the rectangles for the bar chart
+				svg.selectAll(".bar")
+					.data(data)
+					.enter().append("rect")
+					.attr("class", "bar")
+					.attr("x", function (d, i) { return i * 40 })
+					.attr("width", 30)
+					.attr("y", function (d) { return y(d.age); })
+					.attr("height", function (d) { return height - y(d.age); });
+
+				// add the x Axis
+				svg.append("g")
+					.attr("transform", "translate(0," + height + ")")
+					.call(d3.axisBottom(x));
+
+				// add the y Axis
+				svg.append("g")
+					.call(d3.axisLeft(y));
+
+			});
+
+		</script>
+
+
+
+	</body>
+</html>

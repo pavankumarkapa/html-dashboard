@@ -1,0 +1,137 @@
+body {
+    background-color: #f7f8f9;
+  }
+
+  .container {
+    background: #f7f8f9
+  }
+
+  .table {
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .table2 {
+    margin: 0 auto;
+    border-radius: 4px;
+    display: none;
+}
+
+  .table thead th {
+    color: #aba7be;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif
+  }
+
+  .table td,
+  .table th {
+    color: #7c769a;
+    text-align: center;
+  }
+
+  tbody {
+    border-radius: 4px;
+  }
+
+  .container .tableBlock {
+    width: 100%;
+    height: 100%;
+    background: #f7f8f9;
+  }
+
+  .lifeTimeRadio {
+    float: left;
+    padding-top: 10px;
+  }
+
+  .radio {
+    padding: 10px;
+  }
+
+  .datewiseRadio {
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .container.big {
+    max-width: 1260px;
+  }
+
+  .dateForm {
+    display: inline-block;
+  }
+
+  .year {
+    display: inline-block;
+  }
+
+  .search {
+    display: inline-block;
+  }
+  .dateSearch {
+    display: inline-block;
+}
+.dateSearch.open{
+    display: inline-block;
+}
+.dateSearch.close{
+    display: none;
+}
+.search #btn{
+    border-radius: 5px;
+    background: #aba8be;
+    border: 1px solid #aba8be;
+}
+.search #btn:hover{
+    border-radius: 5px;
+    background: #24bba2;
+    border: 1px solid #24bba2;
+}
+.donut {
+    width: 29%;
+    border: 1px solid #24bba2;
+    display: inline-block;
+    margin: 20px;
+    background: white;
+    
+    }
+ .donut:hover{
+    width: 30%;
+    border: 1px solid #24bba2;
+    display: inline-block;
+    margin: 20px;
+    background: white;
+    box-shadow: 0px 0px 3px 1px #24bba2;
+ }   
+   p {
+    margin: 0 auto;
+    color: white;
+    padding-top: 5px;
+}
+.header {
+    height: 30px;
+    /* top: 0; */
+    background: #259490;
+    border-radius: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+.Hands {
+    display: inline-block;
+    width:29%;
+    border: 1px solid #24bba2;
+    /* float: left; */
+    background: white;
+    height: 20%;
+    margin: 20px;
+    /* color: black; */
+}
+.hands .data p {
+    margin: 0 auto;
+    /* padding: 25px; */
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    color: #24bba2;
+    font-size: 30px;
+}

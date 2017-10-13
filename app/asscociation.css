@@ -1,0 +1,419 @@
+
+
+/* .slider #ex8Slider .slider-selection {
+            background: #BABABA;
+        }
+
+        .slider {
+            padding: 15px;
+        }
+
+        .slider label {
+            font-weight: bold;
+        } */
+
+
+
+
+.widgets .bottomRight {
+    width: 100%;
+    margin-bottom: 5px;
+    /* margin: 10px; */
+    display: block;
+    border: 1px solid #ccc;
+    float: left;
+    background: white;
+	box-shadow: 0 0 3px 2px #ccc;
+}
+
+.individualPlayer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    background: white;
+}
+
+
+
+
+
+
+.widgets .header {
+	width: 100%;
+	float: left;
+    display: block;
+    border-bottom: 1px solid darkgray;
+	padding: 5px 10px;
+	box-shadow: 0 4px 4px -2px #ccc;
+}
+.widgets .header span {
+	display: block;
+	font-size: 16px;
+	line-height: 25px;
+	float: left;
+}
+
+.widgets .bottomRight span.date {
+    float: right;
+    color: red;
+    font-size: 10px;
+    line-height: 2.5em;
+}
+
+.widgets .bottomRight span.statistics {
+    color: Black;
+    font-size: 20px;
+	font-weight: 600;
+	
+}
+/* .bottomRight .middleBottomRight {
+            margin: 5px;
+            display: block;
+            float: left;
+        } */
+.widgets .bottomRight .handsPlayed {
+	margin-bottom: 8px;
+}
+.widgets .bottomRight .handsPlayed span {
+	font-size: 16px;
+	font-weight: 600;
+}
+.widgets .bottomRight .middleBottomRight {
+    padding: 5px 10px;
+    width: 100%;
+    float: left;
+	margin-top: 15px;
+	text-align: center;
+}
+.widgets .bottomRight .middleBottomRight .statisticGraph {
+    margin: 0 auto;
+}
+.widgets .bottomRight .middleBottomRight .statisticGraph .statistic-alert {
+    width: 38%;
+    float: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.widgets .bottomRight .middleBottomRight .statisticGraph .count {
+    width: 46%;
+    float: none;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.widgets .bottomRight .middleBottomRight .statisticGraph .count span {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: aerial;
+}
+
+.widgets .bottomRight .middleBottomRight .statisticGraph .count .gameType li.cashGame::before {
+    content: "";
+    height: 10px;
+    background: #808080;
+    width: 10px;
+    display: inline-block;
+}
+
+.widgets .bottomRight .middleBottomRight .statisticGraph .count .gameType li.sit::before {
+    content: "";
+    height: 10px;
+    background: #ffcc00;
+    width: 10px;
+    display: inline-block;
+}
+
+.widgets .bottomRight .middleBottomRight .statisticGraph .count .gameType li.tournament::before {
+    content: "";
+    height: 10px;
+    background: #333;
+    width: 10px;
+    display: inline-block;
+}
+
+.widgets .bottomRight .middleBottomBottom {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+.widgets .bottomRight .middleBottomBottom .bestHand span {
+	font-weight: 600;
+}
+
+.widgets .bottomRight .middleBottomBottom .cardsdisplay .cards {
+    width: 25px;
+    height: 40px;
+    background: gray;
+    border-radius: 3px;
+    float: left;
+    margin-right: 5px;
+    
+}
+
+.widgets .middleBottomBottom .cardsdisplay {
+    width: 100%;
+    float: left;
+    margin: 5px;
+}
+
+.widgets .middleBottomBottom .cardsdisplay .cards {
+    width: 25px;
+    height: 40px;
+    background: gray;
+    border-radius: 1px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.widgets .middleBottomBottom .cardType span {
+	display: block;
+	font-weight: 500;
+	margin-top: 5px;
+}
+.widgets .bottomRightFinance {
+    width: 100%;    
+    display: block;
+    border: 1px solid #ccc;
+    float: left;
+    background: white;
+	box-shadow: 0 0 3px 2px #ccc;
+}
+
+.financeheader {
+        width: 100%;
+    float: left;
+    display: block;
+    border-bottom: 1px solid darkgray;
+    padding: 5px 10px;
+    box-shadow: 0 4px 4px -2px #ccc;
+}
+.financeheader a {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 0 10px;
+	line-height: 25px;
+}
+.bottomRightFinance .values {
+    padding: 24px;
+    transform: translate(-10%, -5%);
+    top: 0;
+    left: 0;
+	margin-top: 0;
+}
+
+.loading {
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 5px auto;
+    animation: loading 5s infinite linear;
+}
+
+.spin-1 {
+    border: 5px solid #c00353;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    width: 236px;
+    height: 230px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.spin-1 span.checkout {
+    padding: 10px;
+    text-align: center;
+    /* display: none; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+/* .spin-1:hover span.checkout{
+    display: block;
+        } */
+
+.spin-2 {
+    border: 5px solid #05bbc3;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    width: 216px;
+    height: 208px;
+    animation-delay: 1s;
+    position: relative;
+    cursor: pointer;
+}
+
+.spin-2 span.deposite {
+    padding: 10px;
+    text-align: center;
+    /* display: none; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+/* .spin-2:hover span.deposite{
+    display: block;
+}
+   */
+
+.spin-3 {
+    border: 5px solid #d2d947;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    width: 186px;
+    height: 186px;
+    animation-delay: 1s;
+    position: relative;
+    cursor: pointer;
+}
+
+.spin-3 span.rake {
+    padding: 10px;
+    text-align: center;
+    /* display: none; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+/* .spin-3:hover span.rake{
+    display: block;
+} */
+
+.spin-4 {
+    border: 5px solid #f2a342;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    width: 166px;
+    height: 166px;
+    animation-delay: 1s;
+    position: relative;
+    cursor: pointer;
+}
+
+.spin-4 span.win {
+    padding: 10px;
+    text-align: center;
+    /* display: none; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+/* .spin-4:hover span.win{
+    display: block;
+}
+   */
+
+.spin-5 {
+    border: 5px solid #f34d51;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    width: 146px;
+    height: 146px;
+    animation-delay: 1s;
+    position: relative;
+    cursor: pointer;
+}
+
+.spin-5 span.Bet {
+    padding: 10px;
+    text-align: center;
+    /* display: none; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+}
+/* .spin-5:hover span.Bet{
+    display: block;
+} */
+
+.spin-6 {
+    border: 5px solid #AEFFAF;
+    width: 126px;
+    height: 126px;
+    animation-delay: 1s;
+    position: relative;
+    cursor: pointer;
+}
+
+.spin-6 span.total {
+    padding: 10px;
+    text-align: center;
+    /* display: none; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+/* .spin-6:hover span.total{
+    display: block;
+} */
+
+.personalInfo {
+    width: 100%;
+    /* margin: 10px; */
+    display: block;
+    border: 1px solid #ccc;
+    float: left;
+    background: white;
+	box-shadow: 0 0 3px 2px #ccc;
+}
+
+.personalHeader {
+   width: 100%;
+    float: left;
+    display: block;
+    border-bottom: 1px solid darkgray;
+    padding: 5px 10px;
+    box-shadow: 0 4px 4px -2px #ccc;
+	text-align: center;
+}
+.personalHeader span {
+	display: block;
+	font-size: 16px;
+    font-weight: 600;
+    padding: 0 10px;
+    line-height: 25px;
+}
+.personalInfo .channel {
+    width: 100%;
+    float: left;
+}
+.personalInfo .channel .table th {
+    border-top: none;
+    text-align: center;
+}
+
+.brand {
+    float: left;
+    padding-left: 25px;
+}
+
+.accountCreation {
+    float: left;
+    padding-right: 20px;
+}
+
+.moneyConversition {
+    float: left;
+    padding-right: 20px;
+}
+
+
+
+
+td {
+    width: 20%;
+    text-align: center;
+    background: #f7f8f9;
+}
